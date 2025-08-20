@@ -1,0 +1,41 @@
+*{
+    padding: 0;
+    margin: 0;
+
+}
+
+body{
+    background-color: #ebf0f1;
+    width: 100%;
+    height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+div.container{
+    padding: 2rem;
+    width: 100%;
+    height: 100vh;
+}
+
+header > h1{
+    margin-bottom: 5rem;
+}
+
+header > div.post-input > input {
+    width: 70%;
+    height: 3rem;
+    border-radius: 3px;
+    border: none;
+    margin-right: 20px;
+    font-size: large;
+
+
+}
+header > div.post-input > button {
+    width: 15%;
+    height: 3rem;
+    background-color: #009be1;
+    border: none;
+    border-radius: 3px;
+    font-size: large;
+}

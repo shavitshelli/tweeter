@@ -66,6 +66,4 @@ class Tweeter {
 
 }
 
-module.exports = {
-    Tweeter
-}
+export { Tweeter }

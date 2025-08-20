@@ -1,0 +1,21 @@
+{
+  "name": "tweeter",
+  "version": "1.0.0",
+  "description": "MY TWEETER PROJECT",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shavitshelli/tweeter.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/shavitshelli/tweeter/issues"
+  },
+  "homepage": "https://github.com/shavitshelli/tweeter#readme"
+}

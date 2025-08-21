@@ -172,6 +172,15 @@ class Styler {
     styleCommentButton(commentButton){
         commentButton.style.width = '5rem'
         commentButton.style.height = '2rem'
+        commentButton.addEventListener('mouseenter', () => {
+            commentButton.style.backgroundColor ='rgb(233, 234, 226)';
+            commentButton.style.transform = 'scale(1.1)';
+        });
+        
+        commentButton.addEventListener('mouseleave', () => {
+            commentButton.style.backgroundColor = '';
+            commentButton.style.transform = '';
+        });
     }
 
     styleCommentInputDiv(commentInputDiv){

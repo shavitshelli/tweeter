@@ -30,3 +30,12 @@ document.addEventListener('click' ,(e) => {
         r.renderPosts(t.getPosts());
     }
 })
+document.addEventListener('click' ,(e) => {
+    if(e.target.classList.contains('comment-button')){
+        console.log(e.target.parentElement.parentElement.dataset.id)
+        const text = e.target.parentElement.firstElementChild.value
+        const postID = e.target.parentElement.parentElement.dataset.id
+        t.addComment(postID,text)
+        r.renderPosts(t.getPosts());
+    }
+})

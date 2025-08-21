@@ -23,16 +23,22 @@ class Render{
             this._appendCommentsToCorrectDiv(commentsDiv,p.comments)
             
             const commentInputDiv = this._createDivWithClassNameAndDataID("comment-input")
-
             const commentInput = this._createCommentInput()
             const commentButton = this._createCommentButton()
+
+            
 
             commentInputDiv.appendChild(commentInput)
             commentInputDiv.appendChild(commentButton)
 
             this._appendAll(newPostDiv ,postText ,commentsDiv,commentInputDiv,deletePost)
       
+            deletePost.addEventListener('click', ()=>{
+                
+            })
+            
             postsDiv.appendChild(newPostDiv)
+
 
             this._addStylesPosts(newPostDiv,postText,deletePost,commentInput,commentButton,commentInputDiv)
         })
@@ -135,6 +141,15 @@ class Styler {
         deletePost.style.alignItems = 'center'
         deletePost.style.justifyContent = 'center'
         deletePost.style.transition = 'all 0.3s ease'
+        deletePost.addEventListener('mouseenter', () => {
+            deletePost.style.backgroundColor = '#ff4444';
+            deletePost.style.transform = 'scale(1.1)';
+        });
+        
+        deletePost.addEventListener('mouseleave', () => {
+            deletePost.style.backgroundColor = 'red';
+            deletePost.style.transform = '';
+        });
     }
 
     styleCommentDiv(commentsDiv){
@@ -162,7 +177,6 @@ class Styler {
     styleCommentInputDiv(commentInputDiv){
         commentInputDiv.style.marginBottom = '1rem'
     }
-
 
 }
 

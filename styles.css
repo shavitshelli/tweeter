@@ -42,7 +42,12 @@ header > div.post-input > button {
     border-radius: 3px;
     font-size: large;
 }
+header > div.post-input > button:hover {
+    background-color: #1375a3;  
+    cursor: pointer;
+}
 
 main > div.posts{
     width: 100%;
 }
+

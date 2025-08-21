@@ -108,7 +108,7 @@ class Styler {
     constructor(){}
     stylePostDiv(postDiv){
         postDiv.style.width = '100%'
-        postDiv.style.height = '300px'
+        // postDiv.style.height = '300px'
         postDiv.style.border = '1px solid black'
         postDiv.style.borderRadius = '6px'
         postDiv.style.marginBottom = '1rem'
@@ -117,6 +117,9 @@ class Styler {
         postDiv.style.display = 'flex'
         postDiv.style.flexDirection = 'column'
         postDiv.style.justifyContent = 'center'
+        postDiv.style.minHeight = 'fit-content';
+        postDiv.style.height = 'auto';
+        postDiv.style.overflow = 'visible';
     }
 
     stylePostText(postText){
